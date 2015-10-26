@@ -9,7 +9,7 @@ RUN pip install shadowsocks
 
 ADD ./shadowsocks.json /etc/shadowsocks.json
 
-VLOUME ["/etc/shadowsocks"]
+VOLUME ["/etc/shadowsocks"]
 
 ENTRYPOINT ["ssserver", "-c", "/etc/shadowsocks/shadowsocks.json"]
 
