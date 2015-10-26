@@ -1,0 +1,11 @@
+ss:
+  image: zhanhao/ss
+  ports:
+    - "9000:9000/tcp"
+    - "9000:9000/udp"
+  environment:
+    - SERVER_PORT=
+    - METHOD=chacha20-ietf-poly1305
+    - PASSWORD=
+  restart: always
+  
