@@ -1,9 +1,11 @@
 FROM ubuntu
 MAINTAINER <Zhanhao Wong>
 
-RUN sudo apt-get update\
-	sudo apt-get install python-gevent python-pip\
-	pip install shadowsocks
+RUN sudo apt-get update && apt-get install -y \
+python-gevent \
+python-pip
+
+RUN pip install shadowsocks
 
 ADD ./shadowsocks.json /etc/shadowsocks.json
 
