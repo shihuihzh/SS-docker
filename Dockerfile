@@ -7,7 +7,7 @@ python-pip
 
 RUN pip install shadowsocks
 
-ADD ./shadowsocks.json /etc/shadowsocks.json
+ADD ./shadowsocks.json /etc/shadowsocks/shadowsocks.json
 
 VOLUME ["/etc/shadowsocks"]
 
