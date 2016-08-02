@@ -1,9 +1,7 @@
-FROM ubuntu
+FROM alpine
 MAINTAINER <Zhanhao Wong>
 
-RUN sudo apt-get update && apt-get install -y \
-python-gevent \
-python-pip
+RUN apk add --no-cache py-pip
 
 RUN pip install shadowsocks
 
